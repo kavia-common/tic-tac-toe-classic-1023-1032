@@ -1,0 +1,13 @@
+<resources>
+    <style name="TicTacToeCell">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:background">@color/secondaryColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:state_enabled">true</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:elevation">1dp</item>
+    </style>
+</resources>

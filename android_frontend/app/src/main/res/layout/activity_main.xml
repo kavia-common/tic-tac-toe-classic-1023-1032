@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaryColor"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <!-- Status/Turn display -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/player_turn"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/primaryColor"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Score display -->
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score_display"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:textColor="@color/accentColor"
+        android:layout_marginBottom="18dp"/>
+
+    <!-- 3x3 Tic Tac Toe grid -->
+    <GridLayout
+        android:id="@+id/gameGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:background="@drawable/grid_border"
+        android:padding="6dp"
+        android:elevation="2dp">
+
+        <!-- These buttons will be referenced in MainActivity -->
+        <Button
+            android:id="@+id/cell_0_0"
+            style="@style/TicTacToeCell"/>
+        <Button
+            android:id="@+id/cell_0_1"
+            style="@style/TicTacToeCell"/>
+        <Button
+            android:id="@+id/cell_0_2"
+            style="@style/TicTacToeCell"/>
+        <Button
+            android:id="@+id/cell_1_0"
+            style="@style/TicTacToeCell"/>
+        <Button
+            android:id="@+id/cell_1_1"
+            style="@style/TicTacToeCell"/>
+        <Button
+            android:id="@+id/cell_1_2"
+            style="@style/TicTacToeCell"/>
+        <Button
+            android:id="@+id/cell_2_0"
+            style="@style/TicTacToeCell"/>
+        <Button
+            android:id="@+id/cell_2_1"
+            style="@style/TicTacToeCell"/>
+        <Button
+            android:id="@+id/cell_2_2"
+            style="@style/TicTacToeCell"/>
+    </GridLayout>
+
+    <!-- Buttons (mode toggle and reset) at bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="6dp">
+
+        <Button
+            android:id="@+id/modeToggle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mode_two_player"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/secondaryColor"
+            android:textAllCaps="false"/>
+
+        <Space
+            android:layout_width="18dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset"
+            android:backgroundTint="@color/accentColor"
+            android:textColor="@color/primaryColor"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

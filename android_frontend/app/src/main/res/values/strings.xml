@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="player_turn">%1$s\'s turn</string>
+    <string name="player_x">Player X</string>
+    <string name="player_o">Player O</string>
+    <string name="player_ai">AI</string>
+    <string name="mode_two_player">Two Player</string>
+    <string name="mode_ai">Play vs AI</string>
+    <string name="score_display">X: %1$d | O: %2$d</string>
+    <string name="reset">Reset</string>
+    <string name="wins">wins!</string>
+    <string name="draw">It\'s a draw!</string>
+</resources>
